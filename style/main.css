@@ -1,0 +1,285 @@
+html, body {
+    margin-top: 2px;
+    padding: 0px;
+}
+
+.main-box-left {
+    /* padding-top: 110px; */
+    padding-left: 10px;
+    width: calc(15% - 20px);
+    min-width: 200px !important;
+    
+    margin-right: 10px;
+    margin-left: 0%;
+    height: 50vh;
+    float: left;
+    background-color: #f1757500;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.main-box-left a {
+    width: 80%;
+    text-decoration: none;
+    color: rgb(27, 22, 168);
+    margin-top: -10px;
+}
+
+.main-box-left a img {
+    display: inline-block;
+    width: 20px !important;
+    /* height: 10px; */
+}
+
+.main-box-left a {
+    display: flex;
+    background-color: #95b3ff54;
+    padding: 5px 10px;
+    align-items: center;
+}
+
+.main-box-left .active {
+    display: flex;
+    background-color: #3b73ff7d !important;
+    padding: 5px 10px;
+    align-items: center;
+    
+}
+
+.main-box-left a span {
+    padding-left: 10px;
+}
+
+.main-box-right {
+    width: 15%;
+    margin-left: 0%;
+    /* float: right; */
+    background-color: #64ff4c00;
+}
+
+.all-messages {
+    /* color: black ; */
+    /* position: fixed; */
+    height: 82.7vh;
+    overflow-y: auto;
+    display: block;
+    padding-bottom: 20px;
+    /* height: 80vh; */
+}
+
+.ph {
+    display: inline-block;
+    margin-right: 15px;
+    width: 40px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 40px;
+}
+
+.mess-inf {
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    flex-direction: row;
+    align-items: center;
+    /* border: none; */
+    /* float: left; */
+}
+
+.mess-inf-text {
+    display: flex;
+    flex-direction: column;
+}
+.admin {
+    color: rgb(37, 76, 215) !important;
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    width: 13px;
+    /* margin-top: 5px; */
+    margin-left: 4px;
+    display: inline;
+    height: 13px;
+}
+
+.my_acc  {
+    font-family: "Comfortaa", sans-serif;
+
+    display: flex;
+    background-color: #cfd9ff;
+    flex-direction: row;
+    padding: 10px;
+    /* width: 10% !important; */
+    align-items: center;
+    height: 40px;
+    margin-left: -20px;
+    padding-left: 25px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.my_acc button  {
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #64ff4c00;
+    border: none;
+    /* background-image: url("/images/chat.png"); */
+    cursor: pointer;
+}
+
+.my_acc button img {
+    width: 25px;
+    height: 13px;
+}
+
+.my_acc img {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.main-box-left-open {
+    display: none;
+    width: 180px;
+    height: 40px;
+    
+    /* border: 1px solid red; */
+    position: fixed;
+    margin-top: 50px;
+    margin-left: 62px;
+    padding-left: 5px;
+}
+
+.main-box-left-open a{
+    margin-top: 3px;
+    /* background-color: #64ff4c00; */
+    background-color: #dae2ff;
+    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.187); */
+}
+
+h1.hello {
+    display: block;
+    font-family: "Comfortaa", sans-serif;
+    /* font-size: 25px ; */
+    /* display: block; */
+    margin-top: 0px;
+    margin-left: 70px;
+    font-weight: 100;
+}
+
+.main-hr {
+    background-color: rgba(0, 0, 0, 0.132);
+    border: 1px solid rgba(0, 0, 0, 0.148);
+    width: 90%;
+    margin-left: 5%;
+}
+
+.main-menu-phone {
+    display: none;
+}
+.zaslonka {
+    background-color: #0000005a;
+    width: 130%;
+    position: fixed;
+    top: -10px;
+    left: -10px;
+    /* margin: -50px 0px 0px -50px; */
+    height: 130vh;
+    display: none;
+    z-index: 9000;
+}
+.big-photo {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;  
+    height: 70vh; 
+    max-width: 100vw; 
+    max-height: 100vh; 
+    object-fit: contain;
+    z-index: 10000;
+}
+
+@media (max-width: 1000px) {
+    .main-box-left {
+        display: none;
+    }
+    .main-box {
+        width: 100% !important;
+        margin-left: 0%;
+    }
+}
+
+
+@media screen and (max-device-width: 768px) {
+
+    .big-photo {
+        width: 80vw !important;  
+        height: 80vh !important; 
+    }
+
+    .main-menu-phone {
+        position: fixed;
+        margin-left: -10px;
+        display: block;
+        width: 100%;
+        background-color: rgba(107, 121, 255, 0.378);
+        height: 50px;
+        z-index: 600;
+    }
+
+    .main-menu-phone button {
+        background-color: #3b73ff00;
+        border: 0px solid rgba(85, 102, 255, 0);
+        font-size: 35px;
+        margin-left: 20px;
+        margin-top: 0px;
+        outline: none;
+    }
+
+    .main-box-left {
+        position: fixed;
+        /* position: absolute; */
+        background-color: rgb(230, 239, 255);
+
+        padding-left: 10px;
+        width: 80%;
+        margin-left: 0%;
+        height: 150vh;
+        float: left;
+        font-size: 17px;
+        margin-left: -10px;
+        margin-top: -70px;
+        display: none;
+        z-index: 100;
+    }
+
+    .my_acc {
+        background-color: #cfd9ff;
+
+        margin-top: 130px;
+        margin-left: -10px;
+        
+    }
+
+    .main-box-left-open {
+        margin-top: -60px;
+        margin-left: 102px;
+        padding-left: 5px;
+    }
+
+    .main-box-left a {
+        margin-left: 5px
+    }
+}
+
